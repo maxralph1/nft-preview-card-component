@@ -42,18 +42,26 @@ body {
  border-radius: 7px;
 }
 
-/* .card ::after:hover {
- content: "";
- background-image: url(./images/icon-view.svg); */
- /* background-color: var(--cyan); */
- /* background-repeat: no-repeat;
- background-size: contain;
- z-index: 999;
- display: block;
- width: 97.5%;
- margin: 0.5em auto;
- border-radius: 7px;
-} */
+a {
+  position: relative;
+  display: inline-block;
+}
+
+a:hover:before {
+  content: '';
+  display: block;
+  background-image: url(./images/icon-view.svg);
+  background-color: var(--cyan);
+  background-position: center;
+  opacity: 0.6;
+  background-repeat: no-repeat;
+  width: 97.5%;
+  height: 95%;
+  position: absolute;
+  border-radius: 7px;
+  margin: 0.5em auto;
+  inset: 0;
+}
 
 .card h1 {
  color: var(--white);
