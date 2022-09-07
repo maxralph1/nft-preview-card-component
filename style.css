@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+:root {
+ --soft-blue: hsl(215, 51%, 70%);
+ --cyan: hsl(178, 100%, 50%);
+ --very-dark-blue-1: hsl(217, 54%, 11%);
+ --very-dark-blue-2: hsl(216, 50%, 16%);
+ --very-dark-blueline: hsl(215, 32%, 27%);
+ --white: hsl(0, 0%, 100%);
+}
+
+*, *::before, *::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+
+body {
+ background-color: var(--very-dark-blue-1);
+ font-family: 'Outfit', sans-serif;
+}
+
+.container {
+ width: 90%;
+ margin: 0 auto;
+}
+
+.card {
+ background-color: var(--very-dark-blue-2);
+ border-radius: 10px;
+ margin: 4em auto;
+ padding: 1em;
+ max-width: 350px;
+}
+
+.card img {
+ display: block;
+ width: 97.5%;
+ margin: 0.5em auto;
+ border-radius: 7px;
+}
+
+/* .card ::after:hover {
+ content: "";
+ background-image: url(./images/icon-view.svg); */
+ /* background-color: var(--cyan); */
+ /* background-repeat: no-repeat;
+ background-size: contain;
+ z-index: 999;
+ display: block;
+ width: 97.5%;
+ margin: 0.5em auto;
+ border-radius: 7px;
+} */
+
+.card h1 {
+ color: var(--white);
+ line-height: 2;
+ font-size: 1.65rem;
+}
+
+.card p {
+ color: var(--soft-blue);
+ line-height: 1.5;
+ font-size: 1.02rem;
+}
+
+.pricing {
+ display: flex;
+ justify-content: space-between;
+ margin: 0.5em auto;
+}
+
+.pricing .crypto {
+ display: flex;
+ align-items: center;
+}
+
+.pricing .crypto img {
+ width: 0.5em;
+ height: 1em;
+}
+
+.pricing .crypto .price {
+ color: var(--cyan);
+ margin-left: 0.25em;
+}
+
+.pricing .duration {
+ display: flex;
+ align-items: center;
+}
+
+.pricing .duration img {
+ width: 1em;
+ height: 1em;
+ margin-right: 0.25em;
+}
+
+hr {
+ border: 0.5px solid var(--very-dark-blueline);
+ /* margin-top: 0.75em; */
+ margin-bottom: 0.25em;
+}
+
+.person {
+ display: flex;
+ align-items: center;
+ gap: 1em;
+}
+
+.person img {
+ width: 2em;
+ border-radius: 50px;
+ border: 1px solid var(--white);
+}
+
+.person p+p {
+ /* margin-left: 1em; */
+}
+
+.person p .name {
+ color: var(--white);
+}
+
+.attribution {
+ font-size: 11px; text-align: center;
+ color: var(--white);
+ margin-bottom: 3em;
+}
+.attribution a {
+ color: var(--soft-blue);
+}
